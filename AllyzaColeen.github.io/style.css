@@ -6,9 +6,6 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-}
-
-#page-1 {
     background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,6 +21,10 @@ body {
 
 img {
     margin-bottom: 2rem;
+}
+
+h6 {
+    font-size: 15px;
 }
 
 .nav-bar ul {
@@ -94,6 +95,31 @@ img {
 }
 
 #about {
-    background-color: rgba(255, 255, 255, 0.4);
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(122, 197, 205, .1);
+    justify-content: center;
+    align-items: center;
+    border: #d6cfd7 2px solid;
+    height: 100vh;
+}
+
+#about article ul {
+    display: flex;
+}
+
+#about article ul li {
+    font-size: 50px;
+    list-style: none;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+}
+
+#about article {
+    max-width: 500px;
+}
+
+#about img {
+    height: 70vh;
 }
