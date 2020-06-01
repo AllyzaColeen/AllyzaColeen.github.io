@@ -3,67 +3,134 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title> Allyza Coleen Fabellar </title>
 </head>
 
 <body>
-    <div id="page-1">
-        <header>
-            <img src="/images/my-logo.png" alt="mylogo" id="logo">
-        </header>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#"> Home </a></li>
-                <li><a href="#"> About </a></li>
-                <li><a href="#"> Projects </a></li>
-                <li><a href="#"> Contact </a></li>
-            </ul>
-        </nav>
-        <section id="home" class="container">
-            <img src="/images/my-picture1.png" alt="my-picture">
-            <p> Hi! My name is Allyza</p>
-            <p> Feel free to explore my Portfolio</p>
-        </section>
-    </div>
 
-    <div id="page-2" class="container">
-        <section id="about">
-            <span id="my-image">
-                <div id="image-1">
-                    <img src="/images/with-nature1.png" alt="">
-                    <div class="image-title">
-                       <h2>at Mt. Ayngat </h2> 
-                    </div>
-                </div>
+    <!-- Navbar and header starts here -->
 
-            </span>
-            <span id="my-image">
-                <span class="arrow-left"></span>
-            <h2> About </h2>
-            <span class="arrow-right"></span>
+    <header>
+        <img src="/images/my-logo.png" alt="mylogo" id="logo">
+    </header>
+    <nav id="nav" class="nav-bar">
+        <ul>
+            <li><a href="#nav"> Home </a></li>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#project"> Projects </a></li>
+            <li><a href="#"> Contact </a></li>
+        </ul>
+    </nav>
 
-            </span>
-        </section>
-    </div>
+    <!-- Navbar and header ends here -->
 
-    <div id="page-3" class="container">
-        <section id="projects">
-            <!--To follow-->
-        </section>
+    <!-- Main contents starts here -->
+    <!-- Homepage starts here -->
+    <section id="home" class="container">
+        <img src="/images/my-picture1.png" alt="my-picture">
+        <p> Hi! My name is Coleen</p>
+        <p> Welcome to my Portfolio</p>
+    </section>
+    <!-- Homepage ends here -->
+
+    <!-- About page starts here -->
+
+    <section id="about" class="container">
+
+        <div id="about-content" class="container">
+            <div>
+                <h2> About </h2>
+            </div>
+            <article id="artricle-1">
+                <p>I am Allyza Coleen Fabellar, a graduate of BS Electronics Engineering from AMA Computer College. I had a previous job experience as an Account Executive which helped me improve my ability to communicate.</p>
+                <p> Right before the covid-19 pandemic arises, I resigned from my previous job to shift my career.And two days after my resignation, the government announced the Enhanced Community Quarantine (ECQ) that's why for a moment, I stopped applying
+                    for a job and took advantage of it to try to learn new skills. I tried watching video tutorials from youtube and found this tutorial of "Create a dropdown menu using HTML and CSS". And from there, I started to learned more by creating
+                    static websites using HTML, CSS and plain JavaScript. And I also found a bunch of free code bootcamps online where I joined and helped me learn new practices in creating a website including Bootstrap and other Front-end libraries online
+                    that would make web development easier.</p>
+
+                <ul>
+                    <li><i class="fab fa-html5"></i>
+                        <h6>HTML</h6>
+                    </li>
+                    <li><i class="fab fa-css3-alt"></i>
+                        <h6>CSS</h6>
+                    </li>
+                    <li><i class="fab fa-js-square"></i>
+                        <h6>JavaScript</h6>
+                    </li>
+                    <li><i class="fab fa-bootstrap"></i>
+                        <h6>Bootstrap</h6>
+                    </li>
+                </ul>
+
+            </article>
+        </div>
+
+        <div id="side-nav-about">
+            <li><a href="#nav"><i class="fas fa-home"></i></a></li>
+            <li><a href="#about"><i class="far fa-file-alt"></i></a></li>
+            <li><a href="#project"><i class="far fa-clone"></i></a></li>
+            <li><a href="#contact"><i class="fas fa-address-card"></i></a></li>
+        </div>
+    </section>
+    <!-- About page ends here -->
+
+    <!-- Project contents starts here -->
+    <section id="project" class="container">
+        <div class="cards swiper-slide" id="first-project">
+            <h5> Project Title</h5>
+            <p> Short Summary</p>
+        </div>
+        <div class="cards swiper-slide" id="second-project">
+            <h5> Project Title</h5>
+            <p> Short Summary</p>
+        </div>
+        <div class="cards swiper-slide" id="third-project">
+            <h5> Project Title</h5>
+            <p> Short Summary</p>
+        </div>
+
+
+    </section>
+
+    <div id="side-nav-project">
+        <li><a href="#nav"><i class="fas fa-home"></i></a></li>
+        <li><a href="#about"><i class="far fa-file-alt"></i></a></li>
+        <li><a href="#project"><i class="far fa-clone"></i></a></li>
+        <li><a href="#contact"><i class="fas fa-address-card"></i></a></li>
     </div>
-    <div id="page-4" class="container">
-        <section id="contact">
-            <!--To follow-->
-        </section>
-    </div>
+    <!-- Project contents ends here -->
+
+    <!-- Contact details starts here -->
+    <section id="contact">
+
+    </section>
+    <!-- Contact details ends here -->
+
+
     <!-- To follow
     <footer>
         <p> copyright &copy; 2020 by ColeenFabs </p>
     </footer>
     -->
 
+    <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+        })
+    </script>
 
 
 </body>
