@@ -4,148 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title> Allyza Coleen Fabellar </title>
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title> Allyza Coleen Fabellar </title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
 
     <!-- Navbar and header starts here -->
+    <section class="container">
+        <header>
+            <img src="/images/my-logo.png" alt="mylogo" id="logo">
 
-    <header>
-        <img src="/images/my-logo.png" alt="mylogo" id="logo">
-    </header>
-    <nav id="nav" class="nav-bar">
-        <ul>
-            <li><a href="#nav"> Home </a></li>
-            <li><a href="#about"> About </a></li>
-            <li><a href="#project"> Projects </a></li>
-            <li><a href="#"> Contact </a></li>
-        </ul>
-    </nav>
-
-    <!-- Navbar and header ends here -->
-
-    <!-- Main contents starts here -->
-    <!-- Homepage starts here -->
-    <section id="home" class="container">
-        <img src="/images/my-picture1.png" alt="my-picture">
-        <p> Hi! My name is Coleen</p>
-        <p> Welcome to my Portfolio</p>
-    </section>
-    <!-- Homepage ends here -->
-
-    <!-- About page starts here -->
-
-    <section id="about" class="container">
-
-        <div id="about-content" class="container" data-aos="fade-up" data-aos-duration="3000">
-            <div>
-                <h2> About </h2>
-            </div>
-            <article>
-                <p>I am Allyza Coleen Fabellar, a graduate of BS Electronics Engineering from AMA Computer College. I had a previous job experience as an Account Executive which helped me improve my ability to communicate.</p>
-                <p> Right before the covid-19 pandemic arises, I resigned from my previous job to shift my career.And two days after my resignation, the government announced the Enhanced Community Quarantine (ECQ) that's why for a moment, I stopped applying
-                    for a job and took advantage of it to try to learn new skills. I tried watching video tutorials from youtube and found this tutorial of "Create a dropdown menu using HTML and CSS". And from there, I started to learned more by creating
-                    static websites using HTML, CSS and plain JavaScript. And I also found a bunch of free code bootcamps online where I joined and helped me learn new practices in creating a website including Bootstrap and other Front-end libraries online
-                    that would make web development easier.</p>
-
+            <nav id="nav" class="nav-bar">
                 <ul>
-                    <li><i class="fab fa-html5"></i>
-                        <h6>HTML</h6>
+                    <li><a href="#nav"> Home </a></li>
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="#project"> Projects </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Navbar and header ends here -->
+
+        <!-- Main contents starts here -->
+        <!-- Homepage starts here -->
+        <section id="home">
+            <img src="/images/my-picture1.png" alt="my-picture">
+            <h1> Hi, My name is Coleen.</h1>
+            <h2> An aspiring Front-end developer</h2>
+        </section>
+        <!-- Homepage ends here -->
+
+        <!-- About page starts here -->
+
+        <section id="about">
+
+            <div id="about-content" class="container" data-aos="fade-up" data-aos-duration="3000">
+                <div>
+                    <h2> About </h2>
+                </div>
+                <article>
+                    <p>My name is Allyza Coleen Fabellar, but you can call me Coleen for short. I am a graduate of BS Electronics Engineering from AMA Computer College. I had a previous job experience as an Account Executive which helped me improve my ability
+                        to communicate.</p>
+                    <p> I am an aspiring Front-end developer with the skills in coding languages like HTML, CSS and JavaScript. I also learned how to use Bootstrap and jquery which are all front-end frameworks. I learned my skills by watching online tutorials,
+                        free web development bootcamps and by rendering hours of practice evryday to create a static websites. I want a career shift because I wanted to pursue my passion in creating art and connect it with the degree I have finished.
+                        I realized that creating a website for myself alone is not enough to grow in this field that is why I am actively looking for a job opportunity.
+                    </p>
+
+                    <ul>
+                        <li><i class="fab fa-html5"></i>
+                            <h4>HTML</h4>
+                        </li>
+                        <li><i class="fab fa-css3-alt"></i>
+                            <h4>CSS</h4>
+                        </li>
+                        <li><i class="fab fa-js-square"></i>
+                            <h4>JavaScript</h4>
+                        </li>
+                        <li><i class="fab fa-bootstrap"></i>
+                            <h4>Bootstrap</h4>
+                        </li>
+                    </ul>
+
+                </article>
+            </div>
+
+            <div id="side-nav-about" data-aos="fade-left" data-aos-duration="1000s">
+                <li><a href="#nav"><i class="fas fa-home fa-2x"></i></a></li>
+                <li><a href="#about"><i class="far fa-file-alt fa-2x"></i></a></li>
+                <li><a href="#project"><i class="far fa-clone fa-2x" ></i></a></li>
+                <li><a href="#contact"><i class="fas fa-address-card fa-2x"></i></a></li>
+            </div>
+        </section>
+        <!-- About page ends here -->
+
+        <!-- Project contents starts here -->
+        <section id="project">
+            <div class="swiper-container" data-aos="fade-left" data-aos-delay="30" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide" id="first-project">
+                        <button class="btn"><h3><a href="https://github.com/AllyzaColeen/searchandcook.github.io" target="_blank"> See Code </a></h3></button>
+                        <button class="btn"><h3><a href="https://allyzacoleen.github.io/searchandcook.github.io/" target="_blank"> Preview </a></h3></button>
+
+                    </div>
+
+                    <div class="swiper-slide" id="second-project">
+                        <h3> Coming soon </h3>
+                        <button class="btn"><h3><a href="#"> See Code </a></h3></button>
+                        <button class="btn"><h3><a href="#"> Preview </a></h3></button>
+                    </div>
+                    <div class="swiper-slide" id="third-project">
+                        <h3> Coming soon </h3>
+                        <button class="btn"><h3><a href="#"> See Code </a></h3></button>
+                        <button class="btn"><h3><a href="#"> Preview </a></h3></button>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <div id="side-nav-project" data-aos="fade-left" data-aos-duration="1000s">
+            <li><a href="#nav"><i class="fas fa-home fa-2x"></i></a></li>
+            <li><a href="#about"><i class="far fa-file-alt fa-2x"></i></a></li>
+            <li><a href="#project"><i class="far fa-clone fa-2x" ></i></a></li>
+            <li><a href="#contact"><i class="fas fa-address-card fa-2x"></i></a></li>
+        </div>
+        <!-- Project contents ends here -->
+
+        <!-- Contact details starts here -->
+        <section id="contact">
+            <div id="contact-content" class="container">
+                <h3> Let's Connect! </h3>
+                <ul>
+                    <li><a href="https://github.com/AllyzaColeen" target="_blank"><i class="fab fa-github-square"></i></a>
+                        <h4>Github</h4>
                     </li>
-                    <li><i class="fab fa-css3-alt"></i>
-                        <h6>CSS</h6>
+                    <li><a href="https://www.linkedin.com/in/allyza-coleen-fabellar-9403031a0/" target="_blank"><i class="fab fa-linkedin"></i></i></a>
+                        <h4>LinkedIn</h4>
                     </li>
-                    <li><i class="fab fa-js-square"></i>
-                        <h6>JavaScript</h6>
+                    <li><a href="https://codepen.io/Coleen" target="_blank"><i class="fab fa-codepen"></i></a>
+                        <h4>Codepen</h4>
                     </li>
-                    <li><i class="fab fa-bootstrap"></i>
-                        <h6>Bootstrap</h6>
+                    <li><a href="https://twitter.com/AllyzaCoding" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <h4>Twitter</h4>
                     </li>
                 </ul>
 
-            </article>
-        </div>
 
-        <div id="side-nav-about" data-aos="fade-up" data-aos-duration="3000">
-            <li><a href="#nav"><i class="fas fa-home"></i></a></li>
-            <li><a href="#about"><i class="far fa-file-alt"></i></a></li>
-            <li><a href="#project"><i class="far fa-clone"></i></a></li>
-            <li><a href="#contact"><i class="fas fa-address-card"></i></a></li>
-        </div>
-    </section>
-    <!-- About page ends here -->
+                <h4> Or </h4>
 
-    <!-- Project contents starts here -->
-    <section id="project" class="container">
-        <div class="swiper-container" data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" id="first-project">
-                    <h5><a href="https://allyzacoleen.github.io/searchandcook.github.io/"> Search and Cook </a></h5>
-                    <p> This is a static recipe website.</p>
-                    <p> Feel free to explore! </p>
-                </div>
-                <div class="swiper-slide" id="second-project">
-                    <h5><a href="#"> Project Title </a></h5>
-                    <p> Short Summary</p>
-                </div>
-                <div class="swiper-slide" id="third-project">
-                    <h5><a href="#"> Project Title </a></h5>
-                    <p> Short Summary</p>
+                <div>
+                    <h3> Contact me using my email below: </h3>
+                    <h3><i class="fas fa-envelope-open-text"></i> allyza.fabellar@gmail.com </h3>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
+            <!-- Contact details ends here -->
+            <!-- Footer starts here -->
+            <footer>
+                <h3> copyright &copy; 2020 by ColeenFabs </h3>
+            </footer>
+            <!-- Footer ends here -->
+
+            <li>
+                <a href="#nav"><i class="fas fa-arrow-alt-circle-up fa-5x"></i></a>
+                <h4>Back to top</h4>
+            </li>
+        </section>
     </section>
-
-    <div id="side-nav-project">
-        <li><a href="#nav"><i class="fas fa-home"></i></a></li>
-        <li><a href="#about"><i class="far fa-file-alt"></i></a></li>
-        <li><a href="#project"><i class="far fa-clone"></i></a></li>
-        <li><a href="#contact"><i class="fas fa-address-card"></i></a></li>
-    </div>
-    <!-- Project contents ends here -->
-
-    <!-- Contact details starts here -->
-    <section id="contact" class="container">
-        <div id="contact-content" class="container">
-            <h3> Let's Connect! </h3>
-            <ul>
-                <li><a href=""><i class="fab fa-github-square"></i></a>
-                    <h6>Github</h6>
-                </li>
-                <li><a href=""><i class="fab fa-linkedin"></i></i></a>
-                    <h6>LinkedIn</h6>
-                </li>
-                <li><a href=""><i class="fab fa-codepen"></i></a>
-                    <h6>Codepen</h6>
-                </li>
-                <li><a href=""><i class="fab fa-twitter-square"></i></a>
-                    <h6>Twitter</h6>
-                </li>
-            </ul>
-
-
-            <h5> Or </h5>
-
-            <div>
-                <h5> Contact me using the details below: </h5>
-                <h5><i class="fas fa-envelope-open-text"></i> allyza.fabellar@gmail.com </h5>
-                <h5><i class="fas fa-phone-square-alt"></i> 0908-967-5818</h5>
-            </div>
-        </div>
-    </section>
-    </section>
-    <!-- Contact details ends here -->
-
-
-    <footer>
-        <p> copyright &copy; 2020 by ColeenFabs </p>
-    </footer>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
