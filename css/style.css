@@ -1,4 +1,4 @@
-/* Global styles */
+/*------------- Global styles starts here ----------------*/
 
 *,
 html {
@@ -91,7 +91,10 @@ li {
 }
 
 
-/* For Navigation and Header section*/
+/*------------- Global styles ends here ----------------*/
+
+
+/*------------ For Navigation and Header section----------------*/
 
 header {
     display: flex;
@@ -124,10 +127,13 @@ header {
 }
 
 
-/* Main contents starts here */
+/*------------ Navigation and Header section ends here ----------------*/
 
 
-/* Homepage starts here */
+/*--------------- Main contents starts here -------------*/
+
+
+/*------- Homepage starts here --------*/
 
 #home {
     display: flex;
@@ -140,14 +146,17 @@ header {
 }
 
 
-/* About page starts here */
+/*----- Homepage ends here ----- */
+
+
+/*----------- About page starts here ------- */
 
 #about {
     display: flex;
     background-color: #d6cfd7;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
     padding: 20px 0;
 }
 
@@ -179,11 +188,8 @@ header {
     margin-bottom: 25px;
 }
 
-#side-nav {
-    position: relative;
-    top: 0;
-    right: 0;
-}
+
+/*------ End of About ---------*/
 
 
 /* Project page starts here */
@@ -240,7 +246,10 @@ header {
 }
 
 
-/* swiper */
+/*------ End of Project ---------*/
+
+
+/*------- swiper -----------*/
 
 .swiper-slide {
     display: flex;
@@ -272,7 +281,10 @@ header {
 }
 
 
-/* Contact page starts here */
+/*------ End of swiper ---------*/
+
+
+/*--------- Contact page starts here ----------------*/
 
 #contact {
     display: flex;
@@ -322,6 +334,19 @@ header {
     color: rgba(0, 0, 255, 0.7);
     transform: scale(2);
 }
+
+
+/*------ End of contact ---------*/
+
+
+/*------ Footer --------*/
+
+#footer {
+    margin: 20px;
+}
+
+
+/*------ End of footer ---------*/
 
 @media only screen and (max-width: 1070px) {
     #side-nav {
