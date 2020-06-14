@@ -1,6 +1,7 @@
 /* Global styles */
 
-* {
+*,
+html {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
@@ -22,8 +23,8 @@ body {
     font-family: 'Merriweather', 'Dancing Script', cursive, serif;
     background-image: url("https://images.pexels.com/photos/671658/pexels-photo-671658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -122,21 +123,6 @@ header {
     font-weight: 700;
 }
 
-.nav-bar {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    justify-content: flex-end;
-    -webkit-box-pack: flex-end;
-    -ms-flex-pack: flex-end;
-    -webkit-justify-content: flex-end;
-    background-color: transparent;
-    height: 70px;
-    align-items: center;
-    z-index: 2;
-}
-
 
 /* Main contents starts here */
 
@@ -158,15 +144,16 @@ header {
 
 #about {
     display: flex;
-    flex-wrap: wrap;
     background-color: #d6cfd7;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px 0;
 }
 
 #about article ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     font-size: 50px;
@@ -192,15 +179,10 @@ header {
     margin-bottom: 25px;
 }
 
-#side-nav-about {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 130vh;
+#side-nav {
+    position: relative;
+    top: 0;
     right: 0;
-}
-
-#side-nav-about li a {
-    color: #d6cfd7;
 }
 
 
@@ -216,17 +198,6 @@ header {
     align-items: center;
     min-height: 95vh;
     z-index: -5;
-}
-
-#side-nav-project {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
-    top: 220vh;
-    right: 0;
-}
-
-#side-nav-project li a {
-    color: #000000;
 }
 
 #first-project,
@@ -306,7 +277,7 @@ header {
 #contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #d6cfd7;
     align-items: center;
     min-height: 75vh;
@@ -327,12 +298,13 @@ header {
 
 #contact-content ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     list-style: none;
     font-size: 50px;
     color: rgba(0, 0, 0, 0.8);
-    width: 100px;
+    width: 95%;
 }
 
 #contact-content ul li {
@@ -349,4 +321,92 @@ header {
 #contact-content ul li a:hover {
     color: rgba(0, 0, 255, 0.7);
     transform: scale(2);
+}
+
+@media only screen and (max-width: 1070px) {
+    #side-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 100px;
+    }
+    .nav-bar ul {
+        display: none;
+    }
+    h1,
+    h2,
+    h3 {
+        font-size: 30px;
+    }
+    #home img {
+        width: 200px;
+    }
+    #first-project,
+    #second-project,
+    #third-project {
+        min-height: 60vh;
+        width: 30rem;
+    }
+    #about {
+        height: auto;
+    }
+    .swiper-container {
+        width: 95%;
+        height: 100%;
+    }
+    #project h3,
+    #contact h3 {
+        font-size: 24px;
+        line-height: 1.5em;
+    }
+    #contact-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+    #home img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    #about-content {
+        padding: 20px;
+        height: auto;
+        max-width: 300px;
+    }
+    #about p,
+    #project h3,
+    #contact h3,
+    h4 {
+        font-size: 12px;
+    }
+    #about-content p {
+        line-height: 17px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+    #about article ul,
+    #contact-content ul {
+        font-size: 30px;
+        list-style: none;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    #first-project,
+    #second-project,
+    #third-project {
+        min-height: 60vh;
+        width: 15rem;
+    }
 }
