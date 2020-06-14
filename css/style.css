@@ -415,10 +415,13 @@ header {
         max-width: 300px;
     }
     #about p,
-    #project h3,
     #contact h3,
     h4 {
         font-size: 12px;
+    }
+    #project h3,
+    .btn h3 {
+        font-size: 20px;
     }
     #about-content p {
         line-height: 17px;
