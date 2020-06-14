@@ -22,6 +22,9 @@ a:target {
 body {
     font-family: 'Merriweather', 'Dancing Script', cursive, serif;
     background-image: url("https://images.pexels.com/photos/671658/pexels-photo-671658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -73,10 +76,13 @@ a {
 
 .btn {
     border: none;
+    outline: none;
+    cursor: pointer;
     margin-bottom: 20px;
     border-radius: 20px;
-    min-width: 50%;
+    min-width: 200px;
     height: 70px;
+    padding: 0 20px;
     background: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
 }
 
@@ -140,7 +146,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    padding: 0;
     height: 80vh;
     width: 100%;
 }
@@ -157,7 +163,7 @@ header {
     justify-content: center;
     align-items: center;
     height: auto;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 #about article ul {
@@ -203,7 +209,6 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 95vh;
-    z-index: -5;
 }
 
 #first-project,
